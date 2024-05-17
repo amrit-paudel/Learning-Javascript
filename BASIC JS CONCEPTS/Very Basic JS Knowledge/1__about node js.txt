@@ -1,0 +1,21 @@
+
+To Check Node Js
+go to CMD in administrator
+type 
+node --version
+or
+node -v  // it gives the current version of noce installed
+npm -v // it tells the current version of npm installed
+
+To update node to latest version
+
+First of all download and install nvm
+
+Open cmd in admin and type : nvm
+
+to install latest version of node type : nvm install latest
+
+nvm ls : will show all the version of node that are installed in system
+
+Actually through nvm we could install whichever version of node we like
+

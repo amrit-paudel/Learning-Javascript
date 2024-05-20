@@ -1,0 +1,15 @@
+Set
+Map
+Regular Expressions
+Exception handling / Error handling
+JSON
+"static" keyword in JS Class
+
+Whole JS Async Topic from W3 school
+
+
+
+skipped for Now
+Seems like they are very less used
+So skipped for now
+Will see in future if ever struck 

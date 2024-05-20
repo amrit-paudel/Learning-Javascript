@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> A title </title>
+    </head>
+    <body>
+    <script>
+        var eating={eat:"i can eat"}
+        var walking={walk:"I can walk"}
+        var speaking={speak:"I can speak"}
+        function mixin(target, ...sources){ // HERE WE CAN DO MOST OF THE TASK BY MAKING THE FUNCTION  ALSO .
+            Object.assign(target, ...sources);
+        }
+       var human=function(){
+
+       }
+       mixin(human.prototype, eating,walking,speaking);
+       var amrit=new human();
+       document.write(amrit.eat);
+    </script>
+    </body>
+</html>

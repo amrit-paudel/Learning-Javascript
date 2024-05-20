@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> This is a title od webpag </title>
+    </head>
+    <body>
+        <h1>  Very First Heading of the webpage </h1>
+        <script>
+            function mobile(model_no,price){
+                return{
+                    Modelnumber:model_no,Price:price
+                }
+            }
+            var samsung=mobile('Note 7','Rs 50,000');
+            var nokia=mobile('latest','around Rs30,000');
+            document.write("About Samsung mobile <br>"+"Model ="+samsung.Modelnumber+"<br>"+"price ="+samsung.Price+"<br><br>");
+            document.write("About the Nokia Mobile <br>"+"Price ="+nokia.Price+"<br>"+"Model Number ="+nokia.Modelnumber);
+        </script>
+    </body>
+</html>

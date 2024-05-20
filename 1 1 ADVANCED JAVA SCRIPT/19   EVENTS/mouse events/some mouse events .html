@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            title of webpage 
+        </title>
+    </head>
+    <body>
+        <div id="mydiv" style="background-color: blueviolet; width:50px"; > A division tag </div>
+        <script>
+            var div=document.getElementById("mydiv");
+            function fun(e){
+                console.log(e.type);
+            }
+            div.addEventListener("mousedown",fun,false);
+            div.addEventListener("mouseup",fun,false);
+            div.addEventListener("click",fun,false);
+            // all teree events are fired up on clicking 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <div id="divid"> </div>
+        <script>
+
+            // we cann ot create by following second method 
+
+            var head=document.createElement("h");
+            var para=document.createElement("p");
+            head.textContent="Head tag Created in java script ";
+            para.textContent="p tag created in java script ";
+            var target=document.getElementById("divid");
+            target.appendChild(head);target.appendChild(para);
+            console.log(target); 
+
+
+            /*var head=document.createElement("h").textContent="Head tag Created in java script ";
+            var para=document.createElement("p").textContent="p tag created in java script ";
+           var target=document.getElementById("divid");
+            target.appendChild(head);target.appendChild(para);
+            console.log(target);*/    
+
+        </script>
+    </body>
+</html>

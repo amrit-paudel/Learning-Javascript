@@ -1,0 +1,27 @@
+<html>
+    <head><title> webpage title </title></head>
+    <body>
+        <h1> Accessing form elements by Javascript </h1>
+        <form name="formtag" action="">
+            Username:<input type="text" name="username"><br>
+            password:<input type="password" name="password"><br>
+            <input type="button" name="submitbutton" value="submit" >
+        </form>
+        <script>
+            // accessing by indexnumber
+            var uname=document.formtag[0];
+            // accessing by name attribute value
+            var usname=document.formtag["username"];
+            //accessing by name attribute value 
+            var usename=document.formtag.username;
+            // accessing by name attribute value 
+            var fname=document.getElementsByName("username");
+            console.log(uname);
+            console.log(usname);
+            console.log(usename);
+            console.log(fname.length);
+            // here we may change the values also because that's why we were accessing the elements .
+            usename.value="Amrit poudel"; // like this 
+        </script>
+    </body>
+</html>

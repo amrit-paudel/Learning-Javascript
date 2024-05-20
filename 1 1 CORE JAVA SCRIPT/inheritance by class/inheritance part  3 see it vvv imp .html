@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+    </head>
+    <body>
+        <script>
+            function mobile(name){
+                this.name=name;
+            }
+            function samsung(price){
+                this.price=price;
+            }
+            // WE MAY DEFINEA  FUNCTION TO INHERIT BECAUSE THE SYNTAX IS NOT VERY MICH VARYING .
+            function inherit (child,parent){
+                child.prototype=Object.create(parent.prototype);
+                child.prototype.constructor=child; // A GOOD PRACTICE TO RESET THE CONSTRUCTOR .
+            }
+            inherit(samsung,mobile);
+            mobile.prototype.getprice=function (){return this.price;} // after inheritance getprice function becomes available to the samsung class also so it is able to  access the this.price which is inside the samsung class
+            var note7=new samsung(90000);
+            document.write(note7.getprice());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head><title> A title </title></head>
+    <body>
+        <script>
+            function mobile(){
+                this.name="Name of mobile ";
+                this.model="model of mobile";
+            }
+            function samsung(){
+                this.price="Price of samsung galaxy";
+                mobile.call(this);
+            }
+            inherit=function(child,parent){
+                child.prototype=Object.create(parent.prototype);
+                child.prototype.constructor=child
+            }
+            inherit(samsung,mobile);
+            var s=new samsung;
+            document.write(s.name+"  "+s.model);
+            
+        </script>
+
+    </body>
+</html>

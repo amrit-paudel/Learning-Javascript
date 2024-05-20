@@ -1,0 +1,5 @@
+1) className returns us the whole string of the classes, i.e if there are many
+classes then all those classes are returned as the string by className property
+para.className=para.className.replace("...","");
+  actually that replace() method returns us the new string so we also need to
+assign that new modified string.

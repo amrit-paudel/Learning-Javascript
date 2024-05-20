@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .class1{
+      color: blue;
+    }
+    .class2{
+      font-family: cursive;
+      color: red;
+    }
+    .class3{
+      background-color: khaki;
+    }
+  </style>
+</head>
+<body>
+<h1 class="head">Very First heading of this html document</h1>
+<button onclick="fun()">Click TO Add class</button>
+<script>
+  var head=document.getElementsByClassName("head")[0];
+  head.classList.add("class1","class3");
+  function fun(){
+    // here i want onclicking that para must go down and class2 must be added also
+    head.className=head.className.replace("head",""); // now head gets removed, lets add classs2
+    //head.className+=" class2"; // this only adds up 
+    head.classList.toggle("class2") // this one toggles everytime when the button is pressed
+  }
+  
+</script>
+<script src="new1.js"></script>
+</body>
+</html>

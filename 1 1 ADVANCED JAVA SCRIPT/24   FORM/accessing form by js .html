@@ -1,0 +1,25 @@
+<html>
+    <head><title> webpage title </title></head>
+    <body>
+        <h1> Accessing form tag by Javascript </h1>
+        <form name="formtag" action="">
+            Username:<input type="text" name="username"><br>
+            password:<input type="password" name="password"><br>
+            <input type="button" name="submitbutton" value="submit" >
+        </form>
+        <script>
+
+            // now accessing forms by various methods 
+
+            // through index number 
+            var indexform=document.forms[0];
+            // accesing through name attribute value
+            var nform=document.forms["formtag"];
+            // accessing againg through name attribute value 
+            var nameform=document.formtag;
+            console.log(indexform);
+            console.log(nform);
+            console.log(nameform);
+        </script>
+    </body>
+</html>

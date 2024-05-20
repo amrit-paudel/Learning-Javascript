@@ -1,0 +1,19 @@
+<html>
+    <head> <title> A title of webpage </title></head>
+    <body>
+    <p id="pid"> Very First paragraph </p>
+    <script>
+        function tag (theory,...exp){
+            for(temp of theory){
+                console.log(temp);
+            }
+            console.log(...exp);
+            console.log(exp);
+        }
+        // first we will make an tag  finctiopn for a template and then we will call the function by the followin method then i will be called 
+        // below tag is a function which is made already 
+        tag`hello${"first expression"} this is a ${"second expression"} tag function${"third expression"}
+and here it is being call${"last expression"}`
+   </script>
+    </body>
+</html>

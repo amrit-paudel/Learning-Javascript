@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            title of page 
+        </title>
+    </head>
+    <body>
+        <h1> Heading of page </h1>
+        <script>
+            function mobile(price,size){
+                this.price=price;
+                this.size=size;
+            }
+            function samsung(name,model,price,size){
+                this.name=name;
+                this.model=model;
+                mobile.call(this,price,size);
+            }
+            var galaxy=new samsung("galaxy grand","grand model","Rs 80,000","six inch");
+            console.log(galaxy.price);
+            console.log(galaxy.size);
+            console.log(galaxy.name);
+            console.log(galaxy.model)
+
+        </script>
+    </body>
+</html> 

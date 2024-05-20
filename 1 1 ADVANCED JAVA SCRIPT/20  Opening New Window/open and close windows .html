@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> webpage title </title>
+    </head>
+    <body>
+        <button>CLose Nwe Window</button>
+        <script>
+            var nwindow=window.open("https://www.google.com","_blank","height=600% width=600% ");
+            function fun(){nwindow.close();}
+            document.getElementsByTagName("button").addEventListener("click","fun");
+        </script>
+    </body>
+</html>

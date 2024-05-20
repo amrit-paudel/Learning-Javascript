@@ -1,0 +1,18 @@
+<html>
+    <head><title> a title of webpage </title></head>
+    <body>
+ <script>
+     function first(a,b){
+         console.log("i am first function "+" and my arguement is "+a);
+         second(b);
+     }
+     function second(b){
+         console.log("i am second function "+" and my arguement is "+b);
+     }
+     function third(fun1,x,y){
+         fun1(x,y)
+     }
+     third(first,100,200);
+ </script>
+    </body>
+</html>  

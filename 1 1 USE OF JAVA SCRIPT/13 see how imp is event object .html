@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onmouseover="fun(event)">
+<h1 class="head" >Very First heading of this html document</h1>
+<script>
+  function fun(e){
+    console.log(e.pageX); // pageX and pageY both are the properties of the event object so 
+                          // do not forget to pass the event object 
+    console.log(e.pageY);
+  }
+</script>
+<script src="new1.js"></script>
+</body>
+</html>

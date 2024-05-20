@@ -1,0 +1,47 @@
+
+
+
+<html>
+    <head>
+        <title> webpage title </title>
+        <style>
+        </style>
+    </head>
+    <body> 
+        <div id="mydiv"> A division tag </div>
+        <p id="pid"> A paragraph tag </p>
+        <h1 id="hid"> A heading tag </h1>
+        <span id="spanid"> A span tag </span>
+       <script>
+           var division=document.getElementById("divid");
+           var para=document.getElementById("pid");
+           var head=document.getElementById("hid");
+           var span=document.getElementById("spanid");
+           function color(e){
+               this.style.color="blue";
+               e.stopPropagation();
+           }
+           function fontfam(e){
+               this.style.fontFamily="cursive";
+               e.stopPropagation();
+           }
+           function size(e){
+               this.style.size="50px";
+               e.stopPropagation();
+           }
+           span.addEventListener("click",color);
+           span.addEventListener("click",fontfam);
+           span.addEventListener("click",size);
+           head.addEventListener("click",size);
+           head.addEventListener("click",color);
+           head.addEventListener("click",fontfam);
+           para.addEventListener("click",color);
+           para.addEventListener("click",size);
+           para.addEventListener("click",fontfam);
+
+           // in this way many handlers might be used in same element  , but we might not want them to propagate so we use e.stopPropagation 
+
+           // but we might all the propagation within same element 
+       </script>
+    </body>
+</html>

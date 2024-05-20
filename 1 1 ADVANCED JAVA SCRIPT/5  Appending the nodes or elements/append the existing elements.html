@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <h1 id="h1id"> Very First Heading </h1>
+        <p id="pid"> Very First paragraph </p>
+        <script>
+           
+           var head=document.getElementById("h1id");
+           var para=document.getElementById("pid");
+           head.appendChild(para);
+           var result=document.getElementById("h1id");
+           console.log(result);
+           // hence in this way we can make child node to any parent node we want 
+           // and that child node is setelled in the last of the parent node.
+            
+        </script>
+    </body>
+</html>

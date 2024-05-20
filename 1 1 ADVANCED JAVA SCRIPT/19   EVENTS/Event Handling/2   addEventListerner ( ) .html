@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> webpage title </title>
+    </head>
+    <body> 
+        <button id="mybtn"> Click Me </button>
+        <script>
+            function disp1(){
+                alert ("Button Clicked 1 ");
+            }
+            function disp2(){
+                alert ("button clicked 2 ");
+            }
+            var but=document.getElementById("mybtn");
+            but.addEventListener("click",disp1,false);// actually it is false by default 
+            but.addEventListener("click",disp2,true);
+            // if we had done by old method there will be overwrite and latter one will be executed .
+        </script>
+    </body>
+</html>

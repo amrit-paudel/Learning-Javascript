@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+        <style>
+            .class1{
+                color:blue;background-color: yellow;
+            }
+            .class2{
+                font-size: 60px;font-family: cursive;text-decoration: underline;
+            }
+            .class3{
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    
+    <body> 
+        
+        <p id="pid" > this si a very first paragraph </p>
+        
+       <script>
+           var classlist=document.getElementById("pid").classList;
+           //classlist.add("class1","class2","class3")
+           // this is how it works just write all the css properties inside the classes and latter wrap up those classes at various html elements 
+           // if we hav used other methods to add the classes , would be very much tedious 
+       </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <head><title> a title of webopage </title></head>
+    <body>
+        <h1> setting and deleting cookie </h1>
+        <script>
+           /* document.cookie="username=Amrit poudel;expires=friday,5-june-2020 09:00:00 utc";
+            alert(document.cookie)
+            document.cookie="username=Amrit poudel;expires=wednesday,3-june-2020 09:00:00 utc";*/
+            document.cookie="username=Amrit poudel; max-age=" + -60*60*24*10 ;
+            // in this way we can delete either by setting past date and by using negative miliseconds .
+        </script>
+    </body>
+</html>

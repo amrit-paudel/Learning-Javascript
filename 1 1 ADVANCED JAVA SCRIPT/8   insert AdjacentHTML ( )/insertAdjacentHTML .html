@@ -1,0 +1,17 @@
+<html>
+    <head><title> title of webpage </title></head> 
+    <body>
+    <div id="divid"> 
+        <h1> use of insertAdjacentHTML method </h1>
+        <h2 id="h2id"> Second heading </h2>
+        <h3 id="h3id"> Third Heading of the webpage </h3>
+    </div>
+        <script>
+            var head=document.getElementById("h2id");
+            head.insertAdjacentHTML("beforebegin","<span> span tag  created in JS </span>");
+            head.insertAdjacentHTML("beforeend","<span> span tag  created in JS </span>");
+            var div=document.getElementById("divid");
+            console.log(div);
+        </script>
+    </body>
+</html>

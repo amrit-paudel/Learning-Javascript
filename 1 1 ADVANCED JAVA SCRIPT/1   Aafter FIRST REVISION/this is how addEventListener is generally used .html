@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> webpage title </title>
+        <style>
+        </style>
+    </head>
+    <body> 
+        <h1 id="hid"> Very first heading of webpage </h1>
+        <p id="pid"> Very First paragraph </p>
+        <button id="btn1">Create New </button>
+        <button id="btn2">Close new</button>
+       <script>
+        function css(){
+            var para=document.getElementById("pid");
+            var head=document.getElementById("hid");
+            para.style.color="red";
+            para.style.fontSize="30px";
+            para.style.fontFamily="cursive";
+            head.style.color="blue";
+            head.style.fontSize="20px";
+            head.style.fontFamily="cursive";
+        }
+        var btn=document.getElementById("btn1");
+        btn.addEventListener("click",css);
+        // this is how we use addEventListener generally we donot use total 100%  what we learn so try to learn everything but no necessary that everything should be used.
+       </script>
+    </body>
+</html>

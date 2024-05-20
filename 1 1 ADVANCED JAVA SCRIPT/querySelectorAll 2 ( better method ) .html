@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> Title </title>
+    </head>
+    <body>
+        <h1> Very First Heading </h1>
+        <p id=first> Very First paragraph
+            <span class="name"> A span tag </span>
+            <span class="notname"> Another span tag </span>
+        </p>
+        <h2> Very Second Heading </h2>
+        <p id=second> Another paragraph</p>
+        <script>
+        var getspan=document.getElementById("first");
+        var result=getspan.querySelectorAll("span.name");
+        console.log(result);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <head> 
+    <title> This is the title of the webpage </title>
+    <script>
+      function wirtename()
+      {
+        var x=document.getElementsByTagName("p");
+        {
+          alert(x[0].innerHTML);
+           x[0].innerHTML="This is modified first  paragraph  !!!!";
+           alert(x[0].innerHTML);
+           
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1> This is the very first Heading of the Webpage</h1>
+    <p> This is the Very First Paragraph </p>
+    <h2 id="h"> This is the second heading of the webpage </h2>
+    <p> This is the second paragraph of the webpage </p>
+    <button onclick="wirtename();"> Chick here </button>
+  </body>
+</html>    <! Here there are two elements by p tag name so instead of an object this function will return us an array >

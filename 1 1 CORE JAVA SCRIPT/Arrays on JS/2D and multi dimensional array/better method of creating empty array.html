@@ -1,0 +1,27 @@
+<html>
+    <head><title> a title </title></head>
+    <body> 
+        <script>
+            // previous method of creating array is quite tedious if we need to create more number of rows so here we will manually take number of rows and columns
+            var rows=prompt("Enter the number of rows");
+            var cols=prompt("Enter number of columns ");
+            var person=[];
+            for(i=0;i<=rows-1;i++){
+                person[i]=[];
+            }
+            for(i=0;i<=rows-1;i++){
+                for(j=0;j<=colos-1;j++){
+                    person[i][j]=prompt("Enter array elements ");
+                }
+            }
+            for(i=0;i<=rows-1;i++){
+                for(j=0;j<=colos-1;j++){
+                    document.write(person[i][j]+"   ")
+                }
+                document.write("<br>")
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> A titl of webpage </title>
+        <body>
+            <script>
+                function fun(result){ //SINCE FUNCTION WILL COME AS AN ARGUEMENT SO HERE WE HAVE A VARIABLE RESULT TO HOLD THAT FUNCTION .
+                    return(result(2,3));
+                }
+                document.write("The sum of the numbers is "+fun(function(num1,num2){return(num1+num2);}));
+            </script>
+        </body>
+    </head>
+</html>

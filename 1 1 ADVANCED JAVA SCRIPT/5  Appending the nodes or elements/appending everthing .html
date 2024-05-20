@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <div id="divid"> 
+        </div>
+        <script>
+            // creating a new element
+          var newnode=document.createElement("new");
+          // appending text node to our newly created element
+          newnode.appendChild(document.createTextNode("Text created in java script "))
+          // appending comment also 
+          newnode.appendChild(document.createComment("Comment created by java script "))
+          // now appending newnode to div element .
+          var target=document.getElementById("divid");
+          target.appendChild(newnode);
+          console.log(target);
+        </script>
+    </body>
+</html>

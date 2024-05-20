@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <h1> Everything about the attributes and DOM prperty in light of HTML DOM mapping </h1>
+        <p id="pid" class="pclass" title="ptitle"> A paragraph tag </p>
+        <script>
+            var para=document.getElementById("pid");
+            console.log(para.className);//  html dom m apping 
+            console.log(para.title)  // html dom mappinmg 
+            // we may also change the value by the html dom mapping 
+            para.className="changed class name ";
+            // we can also do same by using the attribute property 
+
+            console.log(para.attributes);
+            para.attributes[2]="changed id";
+
+            // setting new attributes and value
+            para.setAttribute("name","value of the name attribute");
+            console.log(para)
+            para.attributes[2].value="changed value of title "
+        </script>
+    </body>
+</html>

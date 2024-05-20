@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <table border="2" id="table">
+            <caption> Table Caption </caption>
+            <thead>
+                <tr>
+                    <td> name</td>
+                    <td> class</td>
+                    <td> number</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Amrit</td>
+                    <td> class 2</td>
+                    <td> 112233</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var tdata=document.getElementById("table");
+            tdata.deleteCaption();
+            tdata.createCaption().innerHTML="new caption";
+            console.log(tdata.tHead)
+            // now we can access the inner data and change them by the help of inner html tag 
+            var innerdata=tdata.tBodies[0].innerHTML; // from here we may apply changes to the data inside the <tbody> tag 
+            console.log(innerdata);
+            var tfoot=tdata.createTFoot();
+            tfoot.innerHTML="<tr><td> Ram </td><td> class 4</td><td>998855</td></tr>";
+            var row=tdata.insertRow(-1);
+            row.innerHTML="<td>Hari</td><td>clss 5</td><td>7788</td>"
+            // here we can also delete the row if we wanted 
+            tdata.deleteRow(0) // table row of 0'th index will get deleted 
+            
+            
+        </script>
+    </body>
+</html>

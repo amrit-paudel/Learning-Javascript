@@ -1,0 +1,17 @@
+<html>
+    <head><title> title of webpage </title></head> 
+    <body>
+        <ul id="uid">
+            <li> First list</li>
+            <li> Second list</li>
+            <li> Third list </li>
+        </ul>
+        <script>
+         var unordered=document.getElementById("uid");
+         var copyclone=unordered.cloneNode(true); // if we use false as a boolea argument than we would get only <ul> not it's child nodes. 
+         var newnode=document.createElement("div");
+         newnode.appendChild(copyclone);
+         console.log(newnode);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+ </style>
+</head>
+<body>
+  <p class="para" onclick="fun(event)">A paragraph tag </p>
+  <h1 class="head">Very First heading </h1>
+<script>
+  var para=document.getElementsByClassName("para")[0];
+  var head=document.getElementsByClassName("head")[0];
+  function fun(e){
+   let x=event.clientX;
+   let y=event.clientY;
+   console.log("Coords are "+ x +"  "+y);
+  }
+</script>
+  <script src="new1.js"></script>
+</body>
+</html>

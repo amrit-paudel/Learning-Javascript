@@ -1,0 +1,16 @@
+<html>
+    <head><title> a title of webpage </title></head>
+    <body>
+ <script>
+// use of spread operator and destruction of an object at the same time 
+// by the destruction of object we donot need to write object_name. agai and again 
+// in other words our code becomes more shorter
+
+     const intro1={name:"Amrit poudel",address:"Ratnanagar Chitwan"};
+     const intro2={phone:"9840505111",college:"Pulchowk campus"};
+     const intro={...intro1,...intro2,added:"Addes after using spread operator"};
+     const{name,address,phone,college,addes}=intro;
+     console.log(name+"  "+address+"  "+phone+"  "+college+"  "+addes);
+ </script>
+    </body>
+</html>  

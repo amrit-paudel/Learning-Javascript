@@ -1,0 +1,26 @@
+<html>
+    <head><title> A title </title></head>
+    <body>
+        <script>
+            function mobile(){
+                this.name="name of mobile ";
+            }
+            function samsung(){
+                mobile.call(this);
+                this.model="Samsung Galaxy";
+            }
+            function galaxy(){
+                samsung.call(this);
+                this.price="Can be affordable";
+            }
+            galaxy.prototype=Object.create(mobile.prototype); // here it makes difference if we create the object without doing inheritance so just bring this down after defining the object and ssee the diofference .
+            var g=new galaxy();
+            document.write(g.price);
+            mobile.prototype.added="Added to the prototype of the mobile object";
+           
+            document.write(g.added);
+
+        </script>
+
+    </body>
+</html>

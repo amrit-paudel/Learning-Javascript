@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+ </style>
+</head>
+<body>
+  <p class="paraclass" >A paragraph tag </p>
+  <h1 class="head">Very First heading </h1>
+   <button onclick="fun()">Click to open</button>
+<script>
+  var para=document.getElementsByClassName("paraclass")[0];
+  var head=document.getElementsByClassName("head")[0];
+  var attr=document.createAttribute("style");
+  attr.value="color:blue;background-color:khaki;font-size:3vw";
+  head.setAttributeNode(attr)
+</script>
+  <script src="new1.js"></script>
+</body>
+</html>

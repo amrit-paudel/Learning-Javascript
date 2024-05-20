@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> a title</title>
+        <style>
+            .class1{color:yellow;font-size: 30px;font-family: cursive;}
+            .class2{font-style: italic;font-weight: bolder;}
+            .class3{text-decoration: underline;}
+        </style>
+    </head>
+    <body>
+        <p id="pid"> first paragraph of the webpage </p>
+        <h1 id="hid"> First heading of webpage </h1>
+        <script>
+           
+            var para=document.getElementById("pid");
+           var head =document.getElementById("hid");
+           // 1)    this is how we place css properties line to line by JS but this is only effective to set urgent property or if any property is left by mistake
+           // this is tedious to set many property 
+          // head.style.color="red";
+         //  head.style.backgroundColor="yellow";
+
+         // 2)  // so we set all properties  to one class and latter add that class by setAttribute( )  method .
+         para.setAttribute("class","class1");
+         // sometimes this also can be tedious when we have to place many css properties which may be inside many classes 
+         // so it is quite tedious to set every class name line by line 
+          
+         // 3)  so we have .classlist property which returns us the list of all classes of any element 
+         //  and by some methods we may also add any number classes to any element all at once . 
+            para.classList.add("class1","class2","class3")  // there are other properties also but thjis is a best methjod of adding any css related properties from the java script.
+
+        </script>
+    </body>
+</html>

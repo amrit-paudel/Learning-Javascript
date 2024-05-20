@@ -1,0 +1,21 @@
+<html>
+    <head><title> a title of webopage </title></head>
+    <body>
+     <h1>Call back function</h1>
+    <script> 
+    function show(a){
+        console.log("i am show function"+" "+a);
+    }
+    function callback(myfun,a){
+        myfun(a);
+    }
+    callback(show,500); // from here we are controlling both the function so the arguements should al;so be passed very much fom here not from else where
+    
+    // this is where function is being calles so , 
+    // from here user is going to call the function
+    // so value should al;so be passed from here not from else where .
+
+    // this code could be made more shorter by passing whold function and also by using arrow fuction also .
+    </script>
+    </body>
+</html>

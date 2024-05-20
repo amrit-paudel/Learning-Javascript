@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+    </head>
+    
+    <body> 
+        <h1> very first hading of the body </h1>
+        <p id="pid"> this si a very first paragraph </p>
+       <script>
+           var removedchild=document.getElementById("pid").parentNode.replaceChild(document.createElement("p").textContent="paragraph tag created inside the java script ",document.getElementById("pid"));
+           console.log(removedchild);
+       </script>
+    </body>
+</html>

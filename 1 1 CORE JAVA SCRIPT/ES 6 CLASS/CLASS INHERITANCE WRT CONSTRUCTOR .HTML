@@ -1,0 +1,24 @@
+<html>
+    <head><title> A title </title></head>
+    <body>
+        <script>
+            class mobile{
+                constructor(){
+                    this.name="name of the mobile";
+                }
+            }
+            class samsung extends mobile{
+                constructor(){
+                    super(); 
+                    // THIS super keyword in very very important because it helps to link the constructor also if we need to pass any valur as an argument to the parent class
+                    // constructor we cando same with the help of this super keyword 
+                    // now writa a program to do the same 
+                    this.model="name of the model of phone";
+                    
+                }
+            }
+            var s1=new samsung();
+            document.write(s1.name);
+        </script>
+    </body>
+</html>

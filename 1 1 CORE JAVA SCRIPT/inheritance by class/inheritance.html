@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+    </head>
+    <body>
+        <script>
+            // acts lika a parent class
+            var mobile=function(){
+                this.name="mobile's name";
+                this.type="mobile's type";
+            }
+            mobile.prototype.added="added value";
+            //acts like a child class
+            var samsung=function(){
+                mobile.call(this); // but on doing this properties of prototype object won't be accessed.
+                this.model="model name";
+               
+
+            }
+            samsung.prototype=Object.create(mobile.prototype); // on doing this prototype object is inherited 
+            var sphone=new samsung();
+            document.write(sphone.name+"<br>"+sphone.type+"<br>");
+            document.write(sphone.added);
+        </script>
+    </body>
+</html>

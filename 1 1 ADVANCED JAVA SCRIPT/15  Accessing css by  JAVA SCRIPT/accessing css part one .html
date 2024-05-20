@@ -1,0 +1,24 @@
+<html>
+    <head><title> a title of webpage </title>
+    </head>
+    <body>
+        <p id="pid" class= "class1 class2 " style="color:yellow; font-size: medium; font-style: italic;"> this is a paragraph tag </p>
+        <script>
+            var para=document.getElementById("pid");
+            // every css properties is applied through the attributes so accessing attributes leads to accessing css properties
+            // and those HTML attributes are also in the form of DOM properties 
+            // so lets access those attributes 
+            var id=para.id// remember this is DOM property
+            var clas=para.className // here we can set new id's and new classes also
+            // so we can put all our css properties to one classa and latter on wrap up that class to our desired element 
+            // this is one method of putting CSS properties
+            
+            console.log(id);
+            console.log(clas);
+            // now on accessing the attribute style we get CSS StyleDeclaration object
+            var styles=para.style.backgroundColor="blueviolet";// now here we can access and set new values also remmber here is also DOM properties 
+            // this is another methos of accessing the css properties 
+
+        </script>
+    </body>
+</html>

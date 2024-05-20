@@ -1,0 +1,30 @@
+<html>
+    <head><title> title of webpage </title></head> 
+    <body>
+    <div id="divid"> 
+        <h1> use of insertAdjacentHTML method </h1>
+        <h2 id="h2id"> Second heading </h2>
+        <h3 id="h3id"> Third Heading of the webpage </h3>
+        <p id="pid"> this is a paragraph tag in the HTMl </p>
+    </div>
+        <script>
+            // first use of insertBefore ( )  method 
+            var parentnode=document.getElementById("divid");
+            var newnode=document.getElementById("pid");
+            var reference=document.getElementById("h3id");
+            parentnode.insertBefore(newnode,reference);
+            // use of insertAdjacentElement( ) 
+             var newelement=document.createElement("span");
+             newelement.textContent="span tag created inside java script ";
+             var targetelement=document.getElementById("h2id");
+             targetelement.insertAdjacentElement("beforebegin",newelement);
+             // use of insertAdjacentHtml ( ) method
+             targetelement.insertAdjacentHTML("beforeend","<p> p tag  inserted through the insertAdjacentHTML ( ) method  </p>")
+             // use of insertAdjacentText method( ) 
+             targetelement.insertAdjacentText("afterend","text added through the insertAdjacentText ( )  method ");
+             console.log(parentnode);
+                 
+             
+        </script>
+    </body>
+</html>

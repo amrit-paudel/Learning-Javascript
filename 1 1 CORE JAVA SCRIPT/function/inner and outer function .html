@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+    </head>
+    <body>
+        <h1> Very first heading of webpage</h1>
+        <script>
+            //HERE INNER FUNCTION CAN ONLY ACCESS THE LOCAL VARIABLES OF THE OUTER FUNCTION IT SEEMS LIKE A NESTING OF A FUNCTION BUT THERE IS A SEPERATE TOPIC FOR THIS ONE .
+            function number(){
+                var num1=6,num2=9;
+                sum();
+                function sum(){
+                  document.write("The numbers are "+num1+" "+num2+"<br>");
+                  document.write("The sum of the numbers is "+(num1+num2)+"<br>");
+                }
+            }
+            number();
+        </script>
+    </body>
+</html> 

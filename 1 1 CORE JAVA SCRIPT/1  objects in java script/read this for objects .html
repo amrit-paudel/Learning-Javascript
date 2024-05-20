@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> A titl of webpage </title>
+        <body>
+            <script>
+               var fees={
+                    amrit:100,ashish:200
+                };
+                document.write("Before adding the fees are "+fees.amrit+"  "+fees.ashish+"<br>");
+                fees.hari=600;
+                document.write("After adding the one member "+fees.amrit+"  "+fees.ashish+"  "+fees.hari+"<br>");
+                fees.total=function(){return fees.amrit+fees.ashish+fees.hari ;};
+                document.write("Total fees is "+fees.total()); 
+                /*var fees={};
+                 fees.amrit=100;
+                 fees.ashish=200;
+                 document.write("Fees are "+fees.amrit+" "+fees.ashish);
+                 fees.total=function(){return fees.amrit+fees.ashish ;}
+                 document.write("Total fees is "+fees.total());*/
+            </script>
+            
+        </body>
+    </head>
+</html>

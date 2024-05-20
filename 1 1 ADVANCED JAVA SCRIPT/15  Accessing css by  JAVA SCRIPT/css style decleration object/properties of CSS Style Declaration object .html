@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <p id="pid" style="color:tomato;background-color: yellow;font-size: 50px;"> A paragraph </p>
+        <script>
+            var para=document.getElementById("pid");
+            var cssproperties=para.style;
+            // accessing and adding css properties
+
+            cssproperties.cssText="color:blue;background-color:red"; // here these new properties gets replaces instead of original properties.
+             // accessing length 
+             console.log(cssproperties.length);
+            
+
+
+            
+        </script>
+    </body>
+</html>

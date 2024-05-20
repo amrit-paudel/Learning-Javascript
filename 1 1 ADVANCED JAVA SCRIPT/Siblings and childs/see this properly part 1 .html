@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+      
+        <div id="divid"> This is division tag
+            <p id="pid"> This is paragraph tag
+                <h1 id="hid"> This is heading tag 
+                    <h2 id="h2id"> second heading 
+
+                    </h2>
+                </h1>
+            </p>
+        </div>
+        <script> 
+        // we must see the beginning element of hierchical table so that we my assign child or siblling generally more sibblings are used.
+            var result=document.getElementById("divid");
+            //see carefully this won't work 
+            /*var result1=result.firstElementChild;
+            var result2=result1.firstElementChild;
+            console.log(result2);*/
+            console.log(result.firstElementChild.nextElementSibling.nextElementSibling); // but this will work 
+        </script>
+    </body>
+</html>

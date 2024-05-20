@@ -1,0 +1,32 @@
+<html>
+    <head><title> webpage title </title></head>
+    <body>
+        <h1 id="headd"> Accessing form elements form by a form in  Javascript </h1>
+        <form name="formtag" action="">
+            Username:<input type="text" name="username"><br>
+            password:<input type="password" name="password"><br>
+            <input type="button" name="submitbutton" value="submit" >
+        </form>
+        <script>
+            // beginning the regular expression 
+            // 1) test( )  method , which returns us either true or false 
+            var head=document.getElementById("headd").textContent;
+            var reg=/form/g;
+            var result1=reg.test(head);
+            console.log(result1);
+            // 2)exec( )  method, which returns us the matching text 
+            var result2=reg.exec(head);
+            console.log(result2);
+            // 3) match( ) , which  gives us an arry of match text or null , so it is applied in string not in the reg
+            var result3=head.match(reg);
+            console.log(result3);
+            // 4) search () method , gives us index of first match else -1 
+            var result4=head.search(reg);
+            console.log(result4);
+            //5) replace  ( ) , which replaces the pattern value with our provided value
+            var result5=head.replace(reg,"FORM");
+            console.log(result5); // the replaces string will be returned 
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <head><title> A title </title></head>
+    <body>
+        <script>
+            // Actually it is better than inheritance because here we have a complete control whch we wanna put in our defined object.
+            var eating={eat:"I can eat"}
+            var talking={talk:"I can talk"}
+            var speaking={speak:"I can speak"}
+            var payment={price:function(dueamt){return 100+dueamt}}
+            var amrit=Object.assign({},eating,speaking,payment);
+            document.write(amrit.eat+"  "+amrit.price(200))
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <table border="2" id="table">
+            <caption> Table Caption </caption>
+            <thead>
+                <tr>
+                    <td> name</td>
+                    <td> class</td>
+                    <td> number</td>
+                </tr>
+            </thead>
+            <tbody id="body">
+                <tr id="row">
+                    <td> Amrit</td>
+                    <td> class 2</td>
+                    <td> 112233</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var getrow=document.getElementById("row");
+            // cells property 
+            var getcells=getrow.cells; // we may access each cells by index number and by inner HTML we may always change the data of each cell
+            // rowIndex
+            console.log(getrow.rowIndex);
+        </script>
+    </body>
+</html>

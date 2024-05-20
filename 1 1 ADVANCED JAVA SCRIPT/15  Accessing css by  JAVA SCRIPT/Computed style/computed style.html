@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+        <style>
+            .myclass{
+                background-color: tomato;
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="pid" style="color:tomato;class="myclass""> A paragraph </p>
+        <script>
+            var para=document.getElementById("pid");
+           var allcssprop=window.getComputedStyle(para);
+          // console.log(allcssprop); // here we can only read but we cannnot write the properties like previous when we get properties by using the style property
+
+           // like this
+           para.style.color="blue" // here we may both read and write 
+           
+
+      </script>
+    </body>
+</html>

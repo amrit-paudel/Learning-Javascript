@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+    </head>
+    
+    <body> 
+        <div id="div1"> first division tag 
+            <p> paragraph inside of first division tag </p>
+            <h1> heading inside of first division tag </h1>
+            <span> span tag inside first division tag </span>
+        </div>
+
+        <div id="div2"> first division tag 
+            <p> paragraph inside of second division tag </p>
+            <h1> heading inside of second division tag </h1>
+            <span> span tag inside second division tag </span>
+        </div>
+       <script>
+           var firstdiv=document.getElementById("div1");
+           var secondiv=document.getElementById("div2");
+           firstdiv.insertBefore(secondiv.children[1],firstdiv.children[2]);
+          //  firstdiv.insertBefore(secondiv.querySelector("h1"),firstdiv.querySelector("span"));
+          // analyze yourself which one is better , it is don by myself because it is not possible to write tag and class name else where 
+          // so must have various methods of selecting the html elements .
+       </script>
+    </body>
+</html>

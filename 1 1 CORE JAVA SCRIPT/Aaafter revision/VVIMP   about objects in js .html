@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            title of page 
+        </title>
+    </head>
+    <body>
+        <h1> Heading of page </h1>
+        <script>
+            var number1={num1:10,num2:20,num3:30}
+            var number2={num1:5,num2:15};
+            var add;
+            number1.add=function(){return number2.num1+number2.num2};
+            console.log(number1.add());
+            // so we may use the variables betweenthe objects 
+
+            // so weneed to specify the number2.num1 and number2.num2 specifically because we could have also done number1.num1+number1.num2
+        </script>
+    </body>
+</html>

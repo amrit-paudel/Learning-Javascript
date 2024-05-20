@@ -1,0 +1,19 @@
+<html>
+    <head><title> A title </title></head>
+    <body>
+        <script>
+            var talking={tak:"I can talk "}
+            var speaking={speak:"I can speak"}
+            var eating={eat:"I can eat"}
+            var human=function(){}
+            Object.assign(human.prototype,talking,eating,speaking);// here main thng is where we store the properties for example here we store them in the prototype object of human class.
+            // NOW WE MAY CREATE AS MANY HUMAN OBJECT AS PER OUR NEED BY MANY DIFFERENT NAMES
+            var amrit=new human();
+            var shya=new human();
+            var sita=new human();
+            document.write(amrit.tak);
+            document.write(sita.speak);
+        </script>
+
+    </body>
+</html>

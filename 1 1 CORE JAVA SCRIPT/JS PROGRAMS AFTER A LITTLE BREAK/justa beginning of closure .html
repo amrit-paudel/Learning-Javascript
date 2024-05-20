@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body> 
+        <script>
+            // TRYING TO FOGURE OUT THE USE OF CLOSURE FUNCTION 
+            function outer (name,surname){
+                document.write("Printing from the outer function <br> The name is "+name+"<br>");
+                inner();
+                function inner(){
+                    document.write("Printing from the inner function  <br> The surname of the person is " + surname);
+                }
+            }
+            outer("Amrit","Paudel");
+        </script>
+    </body>
+</html>

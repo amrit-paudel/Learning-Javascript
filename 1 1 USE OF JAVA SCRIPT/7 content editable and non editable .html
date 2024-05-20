@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pid" >this is a paragraph </p>
+    <button id="btn" onclick="fun()">Click</button>
+    <script>
+        var para=document.getElementById("pid");
+        var btn=document.getElementById("btn");
+      function fun(){
+          if(para.isContentEditable){
+              para.contentEditable="false";
+              btn.innerText="Click TO Edit "
+          }
+          else{
+              para.contentEditable="true";
+              btn.innerText="Click To Disable the edit";
+          }
+      }
+    </script>
+</body>
+</html>

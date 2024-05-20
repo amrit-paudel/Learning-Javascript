@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+   .class1{
+     font-size: 3vw;
+     color: blue;
+   }
+   .class2{
+     background-color: khaki;
+     font-family: cursive;
+   }
+ </style>
+</head>
+<body>
+  <p class="para">A paragraph tag </p>
+<script>
+var para=document.getElementsByClassName("para")[0];
+para.classList.add("class1","class2");
+console.log(para.className.length) // see whole class names are counted as a single string
+ para.className=para.className.replace("para",""); // here we are removing the specific string "para"
+ // and after removing the repplace() method returns the new string 
+ // same thing can also be done by para.classList.remove("para");
+ // but by classlist we can't do replace the any class with nothing, there we can replace any class with another class only.class2
+para.className+=" active"; // here para.className refers to the string of classes and by above line of code we are 
+//adding a new string to the classes string which ultimately becomes the new classes being added
+// this can also be done by para.classList.add("para");
+
+  </script>
+  <script src="new1.js"></script>
+</body>
+</html>

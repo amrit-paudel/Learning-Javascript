@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            title of page 
+        </title>
+    </head>
+    <body>
+        <h1> Heading of page </h1>
+        <script>
+            function mobile(name,model){
+                this.name=name;this.model=model;
+            }
+            function samsung(price,name,model){
+                this.price=price;
+                mobile.call(this,name,model);
+            }
+            //var galaxy=new samsung(5000,"Samsung Galaxy","Galaxy Grand");  
+            mobile.prototype.getprice=function(vat){return this.price+vat}
+            samsung.prototype=Object.create(mobile.prototype);
+            
+            var galaxy=new samsung(5000,"Samsung Galaxy","Galaxy Grand");  // here it matters when the object is being defined 
+            // if object is defined before being inherited than that object might not work just see above .
+            console.log(galaxy.getprice(500))
+        </script>
+    </body>
+</html> 

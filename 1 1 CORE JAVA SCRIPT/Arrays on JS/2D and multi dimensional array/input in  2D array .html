@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> A title </title>
+    </head>
+    <body>
+        <script>
+            var person=[[],[],[]];
+            loa=prompt("Enter the length of an array ");
+            for(i=0;i<=person.length-1;i++){
+                for(j=0;j<=loa-1;j++){
+                    person[i][j]=prompt("Enter the array Element")
+                }
+                loa=prompt("Enter the length of an array ");
+
+            }
+            // here by coincidence the length of person array and member array is ame but it will not be the case everytime. 
+            // so here for meember array we have done person[i].length 
+            for(i=0;i<=person.length-1;i++){
+                for(j=0;j<=person[i].length-1;j++){
+                    document.write(person[i][j]+"  ");
+                }
+                document.write("<br>");
+            }
+         </script>
+    </body>
+</html>

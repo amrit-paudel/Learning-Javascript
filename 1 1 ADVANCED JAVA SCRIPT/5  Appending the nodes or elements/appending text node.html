@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <div id="divid"> this is division tag 
+            <h1 id="h1id"> Very First Heading </h1>
+        <p id="pid"> Very First paragraph </p>
+        </div>
+        <script>
+          var target=document.getElementById("divid");
+          target.appendChild(document.createTextNode("Text node created to append"));
+          console.log(target);
+          </script>
+    </body>
+</html>

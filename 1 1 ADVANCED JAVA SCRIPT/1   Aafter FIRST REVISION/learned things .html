@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+        <h1> Very First Heading </h1>
+        <p> Very First paragraphggg </p>
+    </head>
+    <body>
+        <script>
+         var para=document.getElementsByTagName("p");
+         console.log(para[0].innerHTML); // here by tagname returns nodelist so be sure to give index number before using not like in byIdname 
+         // similar thing with class name 
+         // in nodelist also when we access any element by QuerySelectorAll("p.para");
+
+         // never ever try to do thid with p , h tag 
+         <div id="mydiv"> first division tag 
+            <div> second division tag 
+                <p> paragraph tag 
+
+                </p>
+            </div>
+        </div>
+
+        
+        </script>
+    </body>
+</html>

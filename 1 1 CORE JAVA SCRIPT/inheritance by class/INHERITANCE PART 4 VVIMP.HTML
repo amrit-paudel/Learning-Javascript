@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+    </head>
+    <body>
+        <script>
+            // HERE UNDERSTAND THGE PURPOSE OF INHERITANCE HERE WE CREATE ONLY ONE OBJECT AND WE TRY TO DO EVERYTHING ONLY THROUGH THE HELP OF CHILD CLASS OBJECT 
+                       function mobile(name){
+                this.name=name;
+            }
+            function samsung(price,name){
+                mobile.call(this,name)
+                this.price=price;
+            }
+            samsung.prototype=Object.create(mobile.prototype);
+            mobile.prototype.getname=function(){return this.name};
+            var galaxy=new samsung(5000,"Galaxy Note 7");
+            document.write(galaxy.getname());
+        </script>
+    </body>
+</html>

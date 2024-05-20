@@ -1,0 +1,16 @@
+<html>
+    <head><title> title of webpage </title></head> 
+    <body>
+    <div id="divid"> 
+        <h1> use of insertAdjacentHTML method </h1>
+        <h2 id="h2id"> Second heading </h2>
+        <h3 id="h3id"> Third Heading of the webpage </h3>
+    </div>
+        <script>
+            var head=document.getElementById("h2id");
+            head.insertAdjacentText("beforebegin","Text inserted before begin ");
+            var div=document.getElementById("divid");
+            console.log(div);
+        </script>
+    </body>
+</html>

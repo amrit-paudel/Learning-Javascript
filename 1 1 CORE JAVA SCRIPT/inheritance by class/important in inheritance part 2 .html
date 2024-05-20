@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <script>
+            class mobile{
+                constructor(name,model){
+                    this.name=name;this.model=model;
+                }
+            }
+            class samsung extends mobile{
+                constructor(name,model,price){
+                    super(name,model); // draw map in mind of how the values from arguements are being passed to the classes .
+                    this.price=price;
+
+                }
+            }
+            var sam=new samsung("Samsung Galaxy","Galax note 7"," RS 50,000");
+            document.write(sam.name+"<br>"+sam.model+"<br>"+sam.price);
+
+        </script>
+    </body>
+</html>

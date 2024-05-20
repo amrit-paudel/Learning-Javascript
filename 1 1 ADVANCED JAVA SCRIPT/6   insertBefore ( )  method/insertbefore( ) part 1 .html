@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <h> This is the use of insertBefore( ) method</h>
+        <ul id="ulid">
+             <li> Jquary </li>
+             <li> React JS </li>
+             <li id="lid"> D3 js </li>
+        </ul>
+        <script>
+        // now we wanna add something befor react JS 
+        // first accessing the parent node
+        var parent=document.getElementById("ulid");
+        // creating new node 
+        var newnode=document.createElement("li");
+        newnode.textContent=" Node JS ";
+        // accessing the reference node 
+        var reference=document.getElementById("lid");
+        parent.insertBefore(newnode,reference);
+        console.log(parent);
+
+        </script>
+    </body>
+</html>

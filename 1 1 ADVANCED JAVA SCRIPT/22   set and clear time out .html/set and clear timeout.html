@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            a title 
+        </title>
+    </head>
+    <body>
+        <p id="para"> Body paragraph , here i am using settime out and clear timeout methods </p>
+        <button id="btn">Cancel timer</button>
+        <script>
+            var timeid=setTimeout(function(){
+                document.getElementById("para").style.color="red"
+            },2000);
+            // here we may define function seperately and then attach with the method also 
+            // we may also use the arrow function that saves time during doing projects .
+           function cleartimer(){
+               clearTimeout(timeid);
+           }
+           document.getElementById("btn").addEventListener("click",cleartimer); // now the timer will gets cancelled.
+        </script>
+    </body>
+</html>

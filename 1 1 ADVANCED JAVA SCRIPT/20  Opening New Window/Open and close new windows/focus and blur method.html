@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> webpage title </title>
+    </head>
+    <body>
+        <button id="btn1"> New Window </button>
+        <button id="btn2"> Focus Window </button>
+        <button id="btn3"> BLur Window </button>
+        <script>
+            var newin; // this declaration of variable iis super duper important 
+            function win(){
+               newin=window.open("","_blank","height 600 width 600"); // things are totally different if we again write keyword var in here 
+            }
+            function focus(){
+                newin.focus();
+            }
+            function blur(){
+                newin.blur();
+            }
+            document.getElementById("btn1").addEventListener("click",win);
+            document.getElementById("btn2").addEventListener("click",focus);
+            document.getElementById("btn3").addEventListener("click",blur);
+        </script>
+    </body>
+</html>

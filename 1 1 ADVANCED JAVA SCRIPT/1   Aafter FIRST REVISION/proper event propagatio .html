@@ -1,0 +1,34 @@
+<html>
+    <head><title> a title of webpage </title></head>
+    <body>
+        
+        <div id="p1id">first paragraph
+            <div id="p2id">Second paragraph
+                <div id="p3id">third paragraph
+                    <div id="p4id">fourth paragraph
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function fun1(){
+                this.style.color="blue";
+            }
+            function fun2(){
+                this.style.color="yellow";
+            }
+            function fun3(){
+                this.style.color="red";
+            }
+            function fun4(){
+                this.style.color="green"
+            }
+            document.getElementById("p1id").addEventListener("click",fun1,true);
+            document.getElementById("p2id").addEventListener("click",fun2,false);
+            document.getElementById("p3id").addEventListener("click",fun3,false);
+            document.getElementById("p4id").addEventListener("click",fun4,false);
+            // a click on let say fourth paragraph also generates the click for it's parent elements.
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<! APPLYING CSS PROPERTIES TO VARIOUS HTML ELEMENTS THROUGH JAVA SCRIPT >
+<html>
+    <head>
+        <title> The title </title>
+    </head>
+    <body>
+        <h1> The first heading </h1>
+        <p> the first paragraph </p>
+        <h2> The second heading </h2>
+        <p> The second paragraph </p>
+        <h3> The third heading </h3>
+        <p> the third paragraph </p>
+        <h4> The fourth heading </h4>
+        <p> The fourth paragraph </p>
+        <script>
+            function css ()
+            {
+                var x=document.getElementsByTagName("p");
+                x[0].style.color="blue";
+                x[1].style.textDecoration="underline";
+                x[2].style.fontSize="200";
+                x[3].style.color="yellow";
+                x[2].style.color="blueviolet";
+                
+                x[2].style.fontFamily="cursive";
+
+            }
+        </script>
+        <button onclick="css ();">Click here </button>
+    </body>
+</html>

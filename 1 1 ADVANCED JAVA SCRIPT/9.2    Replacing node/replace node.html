@@ -1,0 +1,18 @@
+<html>
+    <head><title> title of webpage </title></head> 
+    <body>
+        <ul id="uid">
+            <li> First list</li>
+            <li id="lid"> Second list</li>
+            <li> Third list </li>
+        </ul>
+        <script>
+            var parent=document.getElementById("uid");
+            var oldchild=document.getElementById("lid");
+            var newchild=document.createElement("li");
+            newchild.textContent="This is a created list tag";
+            var removedchild=parent.replaceChild(newchild,oldchild);
+            console.log(removedchild);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> webpage title </title>
+    </head>
+    <body>
+        <button id="btn1"> New Window </button>
+        <button id="btn2"> Resize Window </button>
+        
+        <script>
+            var newin; // this declaration is super duper important 
+            function win(){
+              newin=window.open("","windowname","height=200 width=200");  // do not write keyword var here
+            }
+            function resizeby(){
+                newin.resizeBy(600,600);
+                newin.focus();
+            }
+            function resizeTo(){
+                newin.resizeTo(900,900);
+                newin.focus();
+            }
+            document.getElementById("btn1").addEventListener("click",win);
+            document.getElementById("btn2").addEventListener("click",resizeby);
+        </script>
+    </body>
+</html>

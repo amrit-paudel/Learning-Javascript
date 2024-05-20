@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            title of page 
+        </title>
+    </head>
+    <body>
+        <h1> Heading of page </h1>
+        <script>
+            var eating={eat:"I can eat"};
+            var walking={walk:"i can walk"};
+            var speaking={speak:"i can speak"};
+            var drinking={drink:"i can drink"};
+            var human=Object.assign({},eating,walking,speaking,drinking);
+            console.log(human) // those eat,walk,speak and drink are the keys and value pairs and speaking, drinking are the intermediate variables.
+            var robot=Object.assign({},walking,speaking);
+            console.log(robot)
+
+            // using mixing function
+             //1) makingh a mixin function
+            function mixin(target,...source){
+                Object.assign(target,source);
+            };
+            //2) making a class
+            var robot2=function(){}// take this as a class and store all those proerties it it's prototype
+            //3) call a function and pass all necessary arguments 
+            mixin(robot2.prototype,walking,speaking)
+            
+            // make a object of that class and see the result 
+            var robo=new robot2();
+            console.log(robo)
+
+        </script>
+    </body>
+</html> 

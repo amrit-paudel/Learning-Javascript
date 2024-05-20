@@ -1,0 +1,22 @@
+<html>
+    <head><title> A title </title></head>
+    <body>
+        <script>
+            // INHERITANCE IN JAVASCRIPT AFTER HE INTRODUCTION OF CLAS IN ES 6 
+            // IT IS A QUITE EASIER WAY OF CREATING AN OBJECT THAN THE PREVIOUS METHOD 
+            // ALSO ONE MAN THING WE DONOT NEED TO WRITE FUNCTION KEYWORD INSIDE THE CLASS IN JAVA SCRIPT 
+                        class parent{
+                 pmoney(){return "Money of the parent"}
+            }
+            class son extends parent{
+                smoney(){return "money of the son "}
+            }
+            class grandson extends son{
+                 gmoney(){return "money of the grandson"}
+            }
+            var g=new grandson();
+            document.write(g.pmoney());
+
+        </script>
+    </body>
+</html>

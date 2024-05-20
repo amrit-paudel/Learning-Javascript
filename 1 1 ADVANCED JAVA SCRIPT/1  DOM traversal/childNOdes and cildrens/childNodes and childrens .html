@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> a title of webpage</title>
+    </head>
+    <body>
+        <div id="divid"> Division Element
+            <h1 id="hid"> Heading element</h1>
+            <p id="pid"> paragraph  element</p>
+        </div>
+        <script>
+            var result1=document.getElementById("divid");
+            console.log(result1.childNodes);
+            // it will shows all the child nodes along with some texts
+            console.log(result1.children);
+            // it will also show all the child nodes but will eleminate those comments and texts
+        </script>
+    </body>
+</html>

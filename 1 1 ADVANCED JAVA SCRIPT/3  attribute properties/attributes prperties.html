@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <p id="myid" class="myclass"> A very first paragraph of the webpage </p>
+        <script> 
+        var result=document.getElementById("myid");
+        var attr=result.attributes[0];
+        // also take that attributes as an array , since it al;so have length property which is very useful in looping 
+        document.write(attr); 
+        // we may also access by another value
+        /* 
+        var attr=result.attributes;
+        for(let i=0;i<=attributes.length-1;i++){
+            document.write(attr[i].nodeName+"<br>");
+        }
+        */
+        // we may write directly 
+        for(i=0;i<=result.attributes.length-1;i++){
+            document.write(result.attributes[i].nodeName+"<br>");
+        }
+        </script>
+    </body>
+</html>

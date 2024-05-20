@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <div id="divid">
+         <h1> Heading inside div tag </h1>
+        </div>
+        <script>
+            // creating elements
+            var newtag=document.createElement("new");
+            var para=document.createElement("p");
+            // creating document fragment
+            var df=document.createDocumentFragment();
+            // here adding tex by using textContent property 
+            newtag.textContent="Text added using the java script ";
+            para.textContent="It is like a paragraph tag created using java script";
+            df.appendChild(newtag);
+            df.appendchild(para);
+            var target=document.getElementById("divid");
+            target.appendChild(df);
+            console.log(target);
+        </script>
+    </body>
+</html>

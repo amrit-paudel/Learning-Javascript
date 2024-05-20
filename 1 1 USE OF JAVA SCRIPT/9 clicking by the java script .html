@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+ </style>
+</head>
+<body>
+  <p class="para" onclick="fun(this)" onmouseover="fun2(this)">A paragraph tag </p>
+ 
+  <h1 class="head">Very First heading </h1>
+<script>
+  var para=document.getElementsByClassName("para")[0];
+  var head=document.getElementsByClassName("head")[0];
+  function fun(thi){
+    thi.style.fontSize="8vw";
+  }
+  function fun2(thi){
+    thi.click();
+  }
+</script>
+  <script src="new1.js"></script>
+</body>
+</html>

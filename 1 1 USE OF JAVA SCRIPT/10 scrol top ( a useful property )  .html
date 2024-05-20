@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+   .divclass{
+     width: 200px;
+     height: 100vh;
+     background-color: khaki;
+     border: solid blue;
+   }
+   .dclass{
+     width: 200px;
+     height: 200px;
+     overflow: scroll;
+   }
+ </style>
+</head>
+<body>
+  <div class="dclass" onscroll="fun()">
+    
+  <div class="divclass" onscroll="fun()">
+    <p class="para" >A paragraph tag </p>
+   <h1 class="head">Very First heading </h1>
+    </div>
+  </div>
+<script>
+  var para=document.getElementsByClassName("para")[0];
+  var head=document.getElementsByClassName("head")[0];
+  var div=document.getElementsByClassName("dclass")[0];
+  function fun(){
+  var x=div.scrollTop;
+  console.log("Scrolled Pixels: "+x);
+  }
+</script>
+  <script src="new1.js"></script>
+</body>
+</html>

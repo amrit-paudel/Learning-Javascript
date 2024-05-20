@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> This is a title od webpag </title>
+    </head>
+    <body>
+        <h1>  Very First Heading of the webpage </h1>
+        <script>
+            function mobile(modelno){
+                this.model=modelno;
+                this.color="white";
+                this.price="20,000";
+            }
+            var samsung=new mobile("galaxy note 10");
+            for(var temp in samsung){
+                document.write(temp+"  "+samsung[temp]+"<br>");
+            }
+        </script>
+    </body>
+</html>

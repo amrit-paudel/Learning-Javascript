@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>A title of the webpage</title>
+    </head>
+    <body>
+        <script>
+            function mobile(){
+                this.name="name of the mobile";
+                this.price="price of the mobile";
+            }
+            var samsung= new mobile();
+            document.write(samsung.name+"<br>"+samsung.price+"<br><br>");
+            mobile.prototype.model=function(modnum){return modnum;}; // USER MAY GIVE VARIABLE MODEL NUMBER SO I  USE FUNCTION INSTEAD 
+            // IF I  HAVE JUST ASSIGNED THE VALUES TO A VARIABLE THAT IT WILL BE SAME FOR ANY MOBILE SET BUT NOW USER HACE CHOICE TO GIVE THE SEDIRED MODEL NUMBER
+            // THIS IS A STEP TOWARDS THE OBJECT ORIENTED PROGRAMMING.
+            // jUST HAVE A LOOK THERE ACTUALLY WE CAN ALLOW USER TO ENTER THE REQUIRED VALUES THROUGH FUNCTION AND ASSIGN THEM TO THE DESIRED VARIABLE SO THAT WHEN WE CREATE AN OBJECT IT IS COMOLETE IN ITSELF , ACTUALLY AN OBJECT IS A COMPLETE THING.
+            var nokia=new mobile();
+            document.write(nokia.name+"<br>"+nokia.price+"<br>"+nokia.model(5522));
+        </script>
+    </body>
+</html>
+
+

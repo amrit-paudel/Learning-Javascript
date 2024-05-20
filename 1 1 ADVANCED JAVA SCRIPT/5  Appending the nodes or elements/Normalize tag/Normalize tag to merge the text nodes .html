@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <p id="pid"> </p>
+        <script>
+          var target=document.getElementById("pid");
+          target.append(document.createTextNode("i "));
+          target.append(document.createTextNode("am "));
+          target.appendChild(document.createTextNode("student"));
+         target.normalize();
+         console.log(target);
+
+            
+        </script>
+    </body>
+</html>

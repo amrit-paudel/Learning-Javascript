@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> a title</title>
+    </head>
+    <div id="divid"> Division tag 
+        <span id="spanid"> A span tag
+         <p id="pid"> paragraph tag 
+              <h1 id="hid"> heading tag 
+              </h1>
+         </p>
+       </span>
+    </div>
+    <body>
+        <script>
+            var getdiv=document.getElementById("divid");
+            var getspan=document.getElementById("spanid");
+            var para=document.getElementById("pid");
+            var head=document.getElementById("hid");
+            function color(){
+                this.style.color="red"
+            }
+            getdiv.addEventListener("click",color);
+            getspan.addEventListener("click",color);
+            para.addEventListener("click",color);
+            head.addEventListener("click",color);
+            // for propagation there should be child of parenta and also events should be applied to every parents 
+            // miconcept : if any event is applied to child than it gets propagated to it's parents also well it's not like this.
+            // generally when we need to apply many handler to same element than we do e.stopPropagaton 
+        </script>
+    </body>
+</html>

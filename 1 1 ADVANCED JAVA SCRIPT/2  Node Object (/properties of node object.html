@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> title of webpage</title>
+    </head>
+    <body>
+        <h1 id="initial"> Initial Heading </h1>
+        <p id="p"> Initial Paragraph</p>
+        <script>
+            // Applying on Document Object or Document NOde
+            document.write(document.nodeName+"<br>");
+            document.write(document.nodeValue+"<br>");
+            document.write(document.nodeType+"<br>");
+            // Now applying on any Element 
+            var head=document.getElementById("initial");
+            document.write("<br><br><br>"+head.nodeName+"<br>");
+            document.write(head.nodeValue+"<br>");
+            document.write(head.nodeType+"<br>");
+            // Now accessing only text and setting and changing the original text.
+            head.firstChild.nodeValue="This is Changed Initial Heading ";
+            document.write("<br><br>"+head.firstChild.nodeValue);
+            // in mostof the cases we mauy obnly have to access the text part only so accessing text part all at once.
+            var para=document.getElementById("p").firstChild.nodeValue="This is changed Initial paragraph ";
+            document.write("<br><br>"+para);
+            // we may also use other properties like next sibbling , previous sibling , last child and so on .
+
+
+        </script>
+    </body>
+</html>

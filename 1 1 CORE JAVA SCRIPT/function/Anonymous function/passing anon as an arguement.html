@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> A titl of webpage </title>
+        <body>
+            <script>
+                function add(anon){
+                    return anon(2,9);
+                }
+                result=add(function(num1,num2){
+                    return (num1+num2);
+                })
+                document.write("The sum of numbers is "+result);
+            </script>
+        </body>
+    </head>
+</html>

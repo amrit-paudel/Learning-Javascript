@@ -1,0 +1,21 @@
+<html>
+    <head><title> webpage title </title></head>
+    <body>
+        
+        <script>
+            var a={name:"Amrit",phone:"123"};
+            var b=a;
+            //   a.name="Changed" , on doing this that of b also gets changed so we need to use spread operator here also 
+            var b={...a};
+            a.name="changed";
+            console.log(b);
+            console.log(a);
+
+             // we may also merge many objects also and also we may add some our own there also 
+            var c={name:"Amrit poudel",address:"Chitwan"};
+            var d={phone:"123456",education:"bachelor's"};
+            var e={...c,...d};
+            console.log(e);
+        </script>
+    </body>
+</html> 

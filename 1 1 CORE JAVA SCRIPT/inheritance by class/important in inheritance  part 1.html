@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <script>
+            function mobile(name,model){
+                this.name=name;
+                this.model=model;
+            }
+            function samsung(name,model,price){
+                mobile.call(this,name,model); // here we must write this at first it ensures that mobile class has to be called and latter it  passes arguements if there are any.
+                // so here we create two classes but passes values by creating one object and values reached to both classes which is very important. 
+                this.price=price;
+                this.getname=function(){return this.name}
+            }
+            var sam=new samsung("Samsung Galaxy","Galaxy note 10","Rs 90,000");
+            document.write(sam.name);
+        </script>
+    </body>
+</html>

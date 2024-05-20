@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <div id="divid"> 
+
+        </div>
+        <script>
+
+        // Below See two methods of accessing the text inside any html element after creating the html element 
+             
+            var newelement=document.createElement("new");
+            // now we can set text without creating and appending the text node also 
+            newelement.textContent="this is a new element created under java script ";
+            console.log(newelement);
+
+             //var text=document.createTextNode("This is a create text node ");
+            // now appending the text node inti the newly created node 
+           // newelement.appendChild(text);
+            //console.log(newelement);
+
+        
+        </script>
+    </body>
+</html>

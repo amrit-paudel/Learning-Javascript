@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title> Title of the webpage </title>
+    </head>
+    
+    <body> 
+        <h1> very first hading of the body </h1>
+        <p id="pid"> this si a very first paragraph </p>
+       <script>
+           var deletednode=document.getElementById("pid").parentNode.removeChild(document.getElementById("pid"));
+           // generally parent node is accessed like this way 
+           console.log(deletednode);
+       </script>
+    </body>
+</html>

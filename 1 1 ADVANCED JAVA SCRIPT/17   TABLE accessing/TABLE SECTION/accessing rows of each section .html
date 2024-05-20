@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <table border="2" id="table">
+            <caption> Table Caption </caption>
+            <thead>
+                <tr>
+                    <td> name</td>
+                    <td> class</td>
+                    <td> number</td>
+                </tr>
+            </thead>
+            <tbody id="body">
+                <tr id="row">
+                    <td> Amrit</td>
+                    <td> class 2</td>
+                    <td> 112233</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var table=document.getElementById("table");
+            // console.log(table.rows);
+            var body=document.getElementById("body");
+            var getrows=body.rows;
+            console.log(getrows); // in this way we may access the rows in each section of the table 
+         
+        </script>
+    </body>
+</html>

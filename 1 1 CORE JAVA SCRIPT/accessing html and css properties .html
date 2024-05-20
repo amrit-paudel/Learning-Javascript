@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Title of webpage
+        </title>
+        <script>
+            function change()
+            {
+                var x=document.getElementsByTagName("p");
+                alert(x[0].innerHTML);
+                alert(x[1].innerHTML);
+                x[1].innerhtml="This is the changes paragraph ."
+                alert(x[1].innerhtml);
+                x[0].style.color="blue";3
+            }
+        </script>
+    </head>
+    <body>
+        <h1> First Heading of the program </h1>
+        <p> First paragraph of the program </p>
+        <h2> Second Heading of the program </h2>
+        <p> Second paragraph of the webpage </p>
+   
+        <button onclick="change();">
+            click here 
+        </button>
+    </body>
+</html>

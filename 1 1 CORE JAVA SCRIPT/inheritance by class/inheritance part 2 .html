@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> A title of the page </title>
+    </head>
+    <body>
+        <script>
+            // A super class or parent lika class 
+            function mobile(name , brand){
+                this.name=name;this.brand=brand;
+            }
+            
+            function samsung(model,price){
+              this.model=model;this.price=price;
+            }
+            samsung.prototype=Object.create(mobile.prototype);
+            mobile.prototype.getprice=function(vat){return this.price+vat ;}
+             // after this all those inside of mobile prototype object is inherited and gets available to the note 7 object
+            // in other words whatever inside of prototype object that is now of note 7 object also 
+            // so see getprice () function .......
+            var note7=new samsung("Galaxy Note 7",45000);
+            document.write(note7.getprice(1000));
+
+
+        </script>
+    </body>
+</html>

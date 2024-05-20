@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <div id="divid">This is division tag 
+            <p id="pid"> this is paragraph id </p>
+            <h1 id="hid"> This is heading tag inside </h1>
+        
+        </div>
+        <script>
+            var result=document.getElementById("divid");
+            console.log(result.firstChild);// here very first child will be returned.
+            console.log(result.firstElementChild); // here very first element will be returned
+            // we may use textContent property  to display or to modify the text written inside the element.
+        </script>
+    </body>
+</html>

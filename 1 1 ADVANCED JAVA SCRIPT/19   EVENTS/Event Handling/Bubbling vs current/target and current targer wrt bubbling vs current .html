@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> webpage title </title>
+    </head>
+    <body> 
+        <h1> target vs current target w.r.t bubling vs current </h1>
+        <div id="one" data-name="1"> 1
+            <div id="two" data-name="2"> 2
+                <div id="three" data-name="3"> 3
+                    <div id="four" data-name="4"> 4
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+           // at first w.r.t bubbling  // change to true and see w r.t current 
+           document.getElementById("one").addEventListener("click",function(e){
+               console.log("1");
+               console.log('target='+e.target.dataset.name);
+               console.log('current target = '+ e.currentTarget.dataset.name);
+           },true);
+
+           document.getElementById("two").addEventListener("click",function(e){
+               console.log("2");
+               console.log("target = " + e.target.dataset.name);
+               console.log("current target = "+e.currentTarget.dataset.name)
+           },true)
+
+           document.getElementById("three").addEventListener("click",function(e){
+               console.log("3");
+               console.log("target = " +e.target.dataset.name);
+               console.log("current target = "+e.currentTarget.dataset.name)
+           },true)
+
+           document.getElementById("four").addEventListener("click",function(e){
+               console.log("4");
+               console.log("target = " +e.target.dataset.name);
+               console.log("current target = "+e.currentTarget.dataset.name)
+           },true)
+           
+         
+
+        </script>
+    </body>
+</html>

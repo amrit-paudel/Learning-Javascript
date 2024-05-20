@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> webpage title </title>
+    </head>
+    <body>
+        name <input type="text" id="name">
+        <script>
+            var getname=document.getElementById("name");
+            function fun1(e){
+                this.style.backgroundColor="blueviolet";
+            }
+            function fun2(e){
+                this.style.backgroundColor="white";
+            }
+            getname.addEventListener("focus",fun1); // also try for focusin 
+            getname.addEventListener("blur",fun2);// also try for focusout
+        </script>
+    </body>
+</html>

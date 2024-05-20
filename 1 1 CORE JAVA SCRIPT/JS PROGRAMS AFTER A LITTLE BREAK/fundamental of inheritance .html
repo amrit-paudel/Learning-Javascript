@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body> 
+        <script>
+            function number(){
+                this.a=10;this.b=20;
+            }
+            var num=new number();
+            document.write(num.a+"  "+num.b+"<br>");
+            number.prototype.sum=function(){return num.a+num.b}; // HERE UNKNOWNINGLY INHERITANCE IS APPLIED 
+            // JUST LOOK HOW SUM FUNCTION DEFINED IN THE PROTOTYPE OBJECT IS ABLE TO ACCESS THE NUMBERS DEFINED IN THE NUM OBJECT 
+            // ONLY POSIBLE BECAUSE DUF TO INHERITANCE SUM FUNCTION ALSO BELONGS TO THE NUM OBJECT 
+            // THANKS TO INHERITANCE 
+            document.write(num.sum());
+        </script>
+    </body>
+</html>

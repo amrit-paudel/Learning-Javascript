@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> a title of webpage </title>
+    </head>
+    <body>
+        <div id="divid"> this is division tag 
+            <h1 id="h1id"> Very First Heading </h1>
+        <p id="pid"> Very First paragraph </p>
+        </div>
+        <script>
+           var newnode=document.createElement("h2");
+           var target=document.getElementById("divid");
+           target.appendChild(newnode);
+           console.log(target);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> a title</title>
+    </head>
+    <form name="formname"> 
+        Username=<input name="username" type=text id="userid"><br><br>
+        Password=<input name="password" type="password"><br><br>
+        <button name="button">Click</button>
+    </form>
+    <body>
+        <script>
+            // suppose we wanna validate the form in a such way that numbers and spaces aren't allowed in the username 
+            function validate()
+           {
+                var getusername=document.formname.username;
+                var  regex=/^([^0-9\s]*)$/g // what it means is there cannot be any numbers neither a whitespace at beginning and at end 
+               if(regex.test(getusername.value)){
+                    getusername.style.backgroundColor="green";
+                  }
+                else{
+                    getusername.style.backgroundColor="red";
+                 }
+            }
+           document.getElementById("userid").addEventListener("keyup",validate);
+           // here this donot work
+           // getusername.addEVentListerner("keyup",validate);
+        </script>
+    </body>
+</html>

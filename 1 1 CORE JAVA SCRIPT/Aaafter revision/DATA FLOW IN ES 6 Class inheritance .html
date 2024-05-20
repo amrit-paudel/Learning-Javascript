@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            title of page 
+        </title>
+    </head>
+    <body>
+        <h1> Heading of page </h1>
+        <script>
+            class mobile{
+                constructor(name,model,price){this.name=name;this.model=model;this.price=price}
+            }
+            class samsung extends mobile{
+                constructor(name,model,price){
+                super(name,model,price);
+            }
+                getprice=function(){console.log("price is "+this.price)}
+            }
+            var galaxy=new samsung("Samsung","Galaxy Grand",5000);  // lets see the flow of data
+            // first all the arguments goes to second constructor or constructor of child class --> then they go to super --> then they go to the constructor of parent class 
+            
+            console.log(galaxy.name);
+            console.log(galaxy.model);
+            galaxy.getprice();
+        </script>
+    </body>
+</html> 

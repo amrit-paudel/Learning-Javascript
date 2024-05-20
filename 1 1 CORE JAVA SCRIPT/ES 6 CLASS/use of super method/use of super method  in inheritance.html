@@ -1,0 +1,21 @@
+<html>
+    <head> <title> A title</title></head>
+    <body>
+        <script>
+            class parent{
+                constructor(money){
+                    this.pmoney=function(){return money}
+                }
+            }
+            class son extends parent{
+                constructor(rupees,money){ // ALWAYS TINK A CONSTRUCTOR AS A FUNCTION AND WHAT IS IN IT'S PARAMETER CAN BE EASILY USED IN IT'S BODY NO DOUBT. SO DON'T THINK NO ANY ARGUMENT PASSED TO SMONEY()  PMONEY() FUNCTION BUT THEY STILL WORKING SEEE THEY ARE INSIDE A CONSTRUCTOR WHICH IS ITSELF IS A FUNCTION JUST BY A SPECIAL NAME .
+                    super(money);
+                    this.smoney=function(){return rupees}
+                }
+            }
+            var s=new son("500","600");
+            document.write(s.pmoney()+"<br>"+s.smoney());
+
+        </script>
+    </body>
+</html>

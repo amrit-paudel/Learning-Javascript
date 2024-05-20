@@ -1,0 +1,20 @@
+<html>
+    <head><title> title of webpage </title></head> 
+    <body>
+    <div id="divid"> 
+        <h1> use of insertAdjacentElement method </h1>
+        <h2 id="h2id"> Second heading </h2>
+        <h3 id="h3id"> Third Heading of the webpage </h3>
+    </div>
+        <script>
+            var newnode=document.createElement("span");
+            newnode.textContent="span tag created in the java script ";
+            var head=document.getElementById("h2id");
+            head.insertAdjacentElement("afterbegin",newnode); // we may also use other various position and see which one becomes first child and which one becomes last child 
+            var div=document.getElementById("divid");
+            console.log(div);
+            var getchild=head.firstChild.nodeName;
+            console.log(getchild);
+        </script>
+    </body>
+</html>

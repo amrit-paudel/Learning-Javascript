@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <script>
+            // there are 5 movie tickets each Rs 200 and if you buy 5 tickets 
+            // get discount Rs 50 each .
+            // there are 5 movie tickets each Rs 200 and if you buy less than 5 tickets get no discount Rs 0 each .
+            var noofticket=4;
+            var buyticket=5;
+            var eachprice=200;
+            var disprice=50;
+            // Now I will make a function 
+            function ticket(theory,nticket,bticket,eprice,dprice){
+                if(nticket<5){dprice=0;}
+                return `${theory[0]} ${nticket} ${theory[1]} ${eprice}
+ ${theory[2]} ${bticket} ${theory[3]} ${dprice} ${theory[4]}`
+ // here we can ddo better by using rest parameter so that we may use rest[0] rest[1] instead of nticket , dprice so that our code looks better .
+               
+            
+            }
+                
+             document.write(ticket `There are ${noofticket} movie tickets Each Rs ${eachprice} and if you buy ${buyticket} 
+tickets get discount Rs ${disprice} Each`)
+        </script>
+    </body>
+</html>

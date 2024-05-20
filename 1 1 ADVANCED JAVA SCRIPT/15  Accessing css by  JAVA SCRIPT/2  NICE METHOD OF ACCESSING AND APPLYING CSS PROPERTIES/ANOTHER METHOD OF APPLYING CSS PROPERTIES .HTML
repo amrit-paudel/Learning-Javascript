@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> webpage title </title>
+        <style>
+            #mydiv>p+h1+div>p{color:blue;} /* > meand bhitra ko and + means aadako */
+            #mydiv>h1+div>p{font-size: 35px;}
+            #mydiv p+h1{font-family: cursive;}/* here no any > or +  so mydiv bhitra ko p+h1 that means p ko aadako h1 sabai */
+        </style>
+    </head>
+    <body> 
+        <div id="mydiv">
+            <p> First para</p>
+            <h1> First heading </h1>
+            <div>
+                <p> Second para </p>
+                <h1> Second heading </h1>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            a title 
+        </title>
+    </head>
+    <body>
+        <p id="para"> Paragraph  of the webpage </p>
+        
+        <script>
+            function color(){document.getElementById("para").style.color="blue"}
+            window.addEventListener("load",color); // becareful donot write on while writting in the addEVentListener method write on prefex in other usuages.
+            window.onload=function(){document.getElementById("para").style.fontSize="40px"}
+        </script>
+    </body>
+</html>

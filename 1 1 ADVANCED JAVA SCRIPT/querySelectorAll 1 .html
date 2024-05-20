@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> Title </title>
+    </head>
+    <body>
+        <h1> Very Firs heading </h1>
+        <p> Very first paragraph</p>
+        <p class="para"> Second paragraph</p>
+        <em id="e">inside emphasis tag</em>
+        <p class="graph"> inside second class tag </p>
+        
+        <script>
+          var result=document.querySelectorAll(".para,.graph,#e"); // hence here we can use either tag name or id name or class name 
+          // in alll cases it will return us NodeList 
+          console.log(result);
+        </script>
+    </body>
+</html>

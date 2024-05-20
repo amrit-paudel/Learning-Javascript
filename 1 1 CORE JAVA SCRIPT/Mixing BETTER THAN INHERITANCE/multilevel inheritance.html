@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body> 
+        <script>
+            function mobile(){};
+            mobile.prototype.a="inside the mobile class";
+            function samsung (){};
+            samsung.prototype.b="inside the samsung class";
+            function galaxy(){};
+            galaxy.prototype.c="inside the galaxy class ";
+            samsung.prototype=Object.create(mobile.prototype);
+            galaxy.prototype=Object.create(samsung.prototype);
+            var g=new galaxy();
+            document.write(g.a);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> Title </title>
+    </head>
+    <body>
+        <h1> Very Firs heading </h1>
+        <p> Very first paragraph</p>
+        <p class="para"> Second paragraph</p>
+        <em class="para graph">inside emphasis tag</em>
+        <p class="para"> inside second class tag </p>
+        
+        <script>
+           var result=document.getElementsByClassName("para"); // it will also access the <em> tag since that also have para in class name 
+           document.write(result.length);
+           for(temp of result){
+               console.log(temp);
+           }
+        </script>
+    </body>
+</html>

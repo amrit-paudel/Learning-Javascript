@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+ </style>
+</head>
+<body>
+  <p class="paraclass" >A paragraph tag </p>
+  <p id="para1">A paragraph tag 1</p>
+  <p id="para2">A paragrph tag 2 </p>
+  <p id="para3">A paragraph tag 3</p>
+  <h1 class="head">Very First heading </h1>
+<script>
+  var para=document.getElementsByClassName("paraclass")[0];
+  var head=document.getElementsByClassName("head")[0];
+  var  paras=document.getElementsByTagName("p");
+  // namesItem() only requires is the id name of that element we wanna access among the nodelist.
+  console.log(paras.namedItem("para1"));
+  console.log(paras.namedItem("para2"))
+  console.log(paras.namedItem("para3"))
+</script>
+  <script src="new1.js"></script>
+</body>
+</html>

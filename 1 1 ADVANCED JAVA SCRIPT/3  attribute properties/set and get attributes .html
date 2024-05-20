@@ -1,0 +1,16 @@
+<html>
+    <head><title> a title of webpage </title></head>
+    <body>
+        <h1 id="hid"> First heading tag </h1>
+        <p id="pid" title="paragraph title" class="paragraph class"> This is a paragraph tag </p>
+        <script>
+           var para=document.getElementById("pid");
+           var getattr=para.getAttribute("title"); // this method only gets the value of any attributes 
+           para.setAttribute("class","value set from java script") // for per existing attributes we may set values from the para.className =........  also
+           // but we generally use this property to set new non existing attributes.
+           para.setAttribute("new","it is a new type of the attribute")
+           console.log(para);
+           
+        </script>
+    </body>
+</html>

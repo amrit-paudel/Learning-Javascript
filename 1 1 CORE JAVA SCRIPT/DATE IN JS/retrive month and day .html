@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> A title of webpage </title>
+    </head>
+    <body>
+        <script>
+            var udate=new Date();
+            monthnum=udate.getMonth();
+            daynum=udate.getDay();
+            document.write(monthname(monthnum)+"<br>");
+            document.write(dayname(daynum)+"<br>");
+            function monthname(monthnumber){
+                var month=["January","February","March","April","May","June","July","August","September","October","November","December"]
+                return month[monthnumber];
+            }
+            function dayname(daynumber){
+                var day=["Sundy","Monday","Tuesday","Wednsday","Thursday","Friday","saturday"];
+                return day[daynumber];
+            }
+        </script>
+    </body>
+</html>

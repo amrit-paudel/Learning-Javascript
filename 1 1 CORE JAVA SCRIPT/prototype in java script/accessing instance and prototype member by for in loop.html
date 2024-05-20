@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>A title of the webpage</title>
+    </head>
+    <body>
+        <script>
+            function mobile(){
+                this.name="name of the mobile";
+                this.price="price of the mobile";
+            }
+            var nokia = new mobile();
+          mobile.prototype.model="model number";
+          mobile.prototype.brand="brand name";
+          for(var temp in nokia){
+              document.write(temp+"<br>");
+          }
+        </script>
+    </body>
+</html>

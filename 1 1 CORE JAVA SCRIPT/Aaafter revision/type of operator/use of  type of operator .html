@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            title of page 
+        </title>
+    </head>
+    <body>
+        <h1> Heading of page </h1>
+        <script>
+            // let first create a constructor function
+            function mobile(){
+                this.name="name of mobile";
+                this.price="price of mobile";
+                this.model="model of mobile";
+                this.size="size of mobile";
+                this.pricee=function(){console.log("i am a methodinside a object")}
+            }
+            // so that one is also a class 
+            // so with that class lets create an object also 
+            var newmobile=new mobile();
+            // let's use for--in  loop to access the insides of an object 
+           
+            for(temp in newmobile){
+                
+               
+                if(typeof(newmobile[temp])!=="function"){console.log(newmobile[temp])}
+            }
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> webpage title </title>
+    </head>
+    <body>
+        name <input type="text" id="name">
+        <script>
+            var getname=document.getElementById("name");
+        function fun(e){
+            console.log(e.type+'  '+e.keyCode+'  '+String.fromCharCode(e.keyCode));
+        }
+        getname.addEventListener("keydown",fun);
+        getname.addEventListener("keyup",fun);
+        getname.addEventListener("keypress",fun);
+        </script>
+    </body>
+</html>

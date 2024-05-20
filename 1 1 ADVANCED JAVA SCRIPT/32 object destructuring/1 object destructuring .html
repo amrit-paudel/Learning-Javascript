@@ -1,0 +1,32 @@
+<html>
+    <head><title> webpage title </title></head>
+    <body>
+        
+        <script>
+            var course={
+                coursename:"java script",duration:"six months",tutor:"geeky shows"
+            };
+            var{coursename,duration,tutor}=course;
+            console.log(coursename);
+            console.log(duration);
+            console.log(tutor);
+            // we can extract any number of the object's elements we want it's not necessary that we access all the properties 
+            console.log("we may access any number of the properties we want ");
+            var{coursename,tutor}=course;
+            console.log(coursename);
+            console.log(tutor);
+
+
+
+
+
+
+            // we can also change the name of variables other than the keys name  see below
+            var{coursename:cname,duration:time,tutor:teacher}=course;
+            console.log("here after changing the name of the variables other than the keys name ")
+            console.log(cname);
+            console.log(duration);
+            console.log(tutor);
+        </script>
+    </body>
+</html> 

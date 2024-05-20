@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> a title</title>
+    </head>
+    <body>
+        <h1> accessing the text and applying various properties based on the data property </h1>
+        <p id="pid"> This is a very first paragraph  of the webpage. here mainly the major content rragarding the webpage is displayed </p>
+        <script>
+            // hete textContent , innerText all fails but para.firstCHild.all those methods which are given below works perfectly 
+            // so there may be various methods of accessing the text but all won't work in the same way 
+            var para=document.getElementById("pid");
+            // appendData( ) 
+            para.firstChild.appendData("appending at last")
+            // deletaData( ) 
+            para.firstChild.deleteData(1,4);
+            // insertData( ) 
+            para.firstChild.insertData(0,'hello this is added string ');
+            //replaceData( ) 
+            para.firstChild.replaceData(0,2,"THE REPLACED VALUE ID IRRESPECTIVE OF THE LENGTH PROVIDED TO REPLAE , WHIC IS IN THS CASE JUST 2 ")
+            //SUBsTRING( ) 
+            var substring=para.firstChild.substringData(4,10);
+            document.write("<br><br>"+substring);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head><title> title of webpage </title></head> 
+    <body>
+        <ul id="uid">
+            <li> First list</li>
+            <li id="lid"> Second list</li>
+            <li> Third list </li>
+        </ul>
+        <script>
+         var parentnode=document.getElementById("uid");
+         var childnode=document.getElementById("lid");
+         var delnode=parentnode.removeChild(childnode);
+         console.log(parentnode);
+         // that removed node is still in the memory but no a part of our DOM if we needed that latter we may use that also .
+         
+        </script>
+    </body>
+</html>
